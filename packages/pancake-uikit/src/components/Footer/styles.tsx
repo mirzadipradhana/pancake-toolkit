@@ -33,7 +33,7 @@ export const StyledIconMobileContainer = styled(Box)`
 `;
 
 export const StyledToolsContainer = styled(Flex)`
-  border-color: ${({ theme }) => theme.colors.backgroundAlt};
+  border-color: ${({ theme }) => theme.colors.cardBorder};
   border-top-width: 1px;
   border-bottom-width: 1px;
   border-style: solid;
@@ -49,5 +49,5 @@ export const StyledToolsContainer = styled(Flex)`
 `;
 
 export const StyledSocialLinks = styled(SocialLinks)`
-  border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundAlt};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
 `;
