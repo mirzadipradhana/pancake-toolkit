@@ -4,7 +4,7 @@ import { Box, Flex } from "../Box";
 import SocialLinks from "./Components/SocialLinks";
 
 export const StyledFooter = styled(Flex)`
-  background: ${darkColors.backgroundAlt};
+  background: ${({ theme }) => theme.colors.backgroundAlt};
 `;
 
 export const StyledList = styled.ul`
@@ -33,7 +33,7 @@ export const StyledIconMobileContainer = styled(Box)`
 `;
 
 export const StyledToolsContainer = styled(Flex)`
-  border-color: ${darkColors.cardBorder};
+  border-color: ${({ theme }) => theme.colors.backgroundAlt};
   border-top-width: 1px;
   border-bottom-width: 1px;
   border-style: solid;
@@ -49,5 +49,5 @@ export const StyledToolsContainer = styled(Flex)`
 `;
 
 export const StyledSocialLinks = styled(SocialLinks)`
-  border-bottom: 1px solid ${darkColors.cardBorder};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundAlt};
 `;

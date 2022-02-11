@@ -18,7 +18,7 @@ import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
 
-const MenuItem: React.FC<FooterProps> = ({
+const Footer: React.FC<FooterProps> = ({
   items,
   isDark,
   toggleTheme,
@@ -100,4 +100,4 @@ const MenuItem: React.FC<FooterProps> = ({
   );
 };
 
-export default MenuItem;
+export default Footer;
