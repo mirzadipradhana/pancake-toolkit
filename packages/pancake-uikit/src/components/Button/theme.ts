@@ -19,6 +19,7 @@ export const scaleVariants = {
 export const styleVariants = {
   [variants.PRIMARY]: {
     backgroundImage: "linear-gradient(200deg, #9e61ff, rgba(142, 97, 255, 0) 34%), radial-gradient(circle farthest-corner at 0% -100%, #619bff 20%, rgba(205, 219, 248, 0) 51%), linear-gradient(180deg, #6c52ee, #6c52ee)",
+    boxShadow: "1px 1px 3px 1px rgb(0 0 0 / 19%), 0 5px 53px 0 rgb(0 29 255 / 73%)",
     backgroundColor: "#130536",
     color: "primary",
   },
