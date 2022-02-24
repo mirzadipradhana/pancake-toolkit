@@ -24,7 +24,7 @@ const FloatingSpinnerIcon = styled(SpinnerIcon)`
   transform: translate3d(0, 0, 0);
 `;
 
-const Spinner: React.FC<SpinnerProps> = ({ size = 128 }) => {
+const Spinner: React.FC<SpinnerProps> = ({ size = 256 }) => {
   return (
     <Container>
       <FloatingSpinnerIcon width={`${size}px`} />
