@@ -8,6 +8,7 @@ import Placeholder from "./Placeholder";
 const StyledBackgroundImage = styled(Wrapper)`
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 `;
 
 const BackgroundImage: React.FC<BackgroundImageProps> = ({ loadingPlaceholder, src, width, height, ...props }) => {
