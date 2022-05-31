@@ -60,7 +60,7 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
   }
 `;
 
-export const StyledExternalMenuItem = styled(Text)<StyledMenuItemProps>`
+export const StyledExternalMenuItem = styled.a<StyledMenuItemProps>`
   position: relative;
   display: flex;
   align-items: center;

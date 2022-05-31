@@ -12,7 +12,7 @@ const MenuItem: React.FC<ExternalMenuItemProps> = ({
 }) => {
   return (
     <StyledMenuItemContainer $isActive={isActive} $variant={variant}>
-      <StyledExternalMenuItem as="a" href={href} $isActive={isActive} $variant={variant} $statusColor={statusColor} external {...props}>
+      <StyledExternalMenuItem as="a" href={href} $isActive={isActive} $variant={variant} $statusColor={statusColor} target="_blank" {...props}>
         {children}
       </StyledExternalMenuItem>
     </StyledMenuItemContainer>
