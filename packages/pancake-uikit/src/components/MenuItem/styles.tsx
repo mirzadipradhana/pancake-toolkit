@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Text from "../Text/Text";
 import { StyledMenuItemProps } from "./types";
 
 export const StyledMenuItemContainer = styled.div<StyledMenuItemProps>`
@@ -21,6 +22,45 @@ export const StyledMenuItemContainer = styled.div<StyledMenuItemProps>`
 `;
 
 const StyledMenuItem = styled.a<StyledMenuItemProps>`
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  color: ${({ theme, $isActive }) => ($isActive ? theme.colors.secondary : theme.colors.textSubtle)};
+  font-size: 16px;
+  font-weight: ${({ $isActive }) => ($isActive ? "600" : "400")};
+
+  ${({ $statusColor, theme }) =>
+    $statusColor &&
+    `
+    &:after {
+      content: "";
+      border-radius: 100%;
+      background: ${theme.colors[$statusColor]};
+      height: 8px;
+      width: 8px;
+      margin-left: 12px;
+    }
+  `}
+
+  ${({ $variant }) =>
+    $variant === "default"
+      ? `
+    padding: 0 16px;
+    height: 48px;
+  `
+      : `
+    padding: 4px 4px 0px 4px;
+    height: 42px;
+  `}
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.tertiary};
+    ${({ $variant }) => $variant === "default" && "border-radius: 16px;"};
+  }
+`;
+
+export const StyledExternalMenuItem = styled(Text)<StyledMenuItemProps>`
   position: relative;
   display: flex;
   align-items: center;
